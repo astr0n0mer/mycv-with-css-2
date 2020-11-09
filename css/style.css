@@ -362,3 +362,35 @@ a {
 .contact-info:hover {
   color: rgba(255, 255, 255, 0.712);
 }
+@media only screen and (orientation: portrait) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  #warning-message {
+    margin: 5vh 12vw;
+    padding: 1.5vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+
+    font-family: "Roboto";
+    font-size: 125%;
+    letter-spacing: 0.08vw;
+    text-transform: uppercase;
+
+    border-radius: 2vh;
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+  #warning-message > span {
+    font-size: 130%;
+  }
+  .outermost-container {
+    display: none;
+  }
+}
+@media only screen and (orientation: landscape) {
+  #warning-message {
+    display: none;
+  }
+}
